@@ -1,0 +1,45 @@
+#gameCanvas
+{
+order: 1;
+position: relative;
+left: 50%;
+top: 20%;
+height: 639px;
+width:482px;
+background-size:482px 639px ;
+background-image: url("../parts/background.png") ;
+background-repeat: no-repeat;
+
+}
+body
+{
+   background-color: rgba(39, 43, 48) ; 
+ 
+}
+.header
+{
+    padding: 30px;
+    background:rgb(64, 69, 75);
+}
+.middle{
+    left: 10%;
+   display: inline-block;
+ position: relative;
+   width: auto;
+
+}
+#explain
+{
+    display: block;
+    order: 2;
+    width: 35%;
+ 
+    font-family: cursive;
+    position: relative;
+    top: 20%;
+    left: 52%;
+    text-align: center;
+    font-size: large;
+    background-color: rgb(64, 69, 75);
+    color: white;
+}
