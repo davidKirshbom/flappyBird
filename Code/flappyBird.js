@@ -10,7 +10,6 @@ let speed = {
     cyclesToAddNewTube: 240,
     fall: 2.2,
     bird: 40
-
 };
 let animationStates = {
     cyclesHaveDone: 0,
@@ -24,16 +23,18 @@ let gameState = {
     firstLostTuch :true
 }
 
-let gameAnimation = setInterval(() => {  
-    animationStates.cyclesHaveDone++;    
-    scoreBoard.update(gameState.currentTubes);
-    deleteUnSeenTubes(gameState.currentTubes).then();
-    drawScene(cx)
-    updateMovement();
-    if (bird.touch(gameState.currentTubes) === true || gameState.gameOver) {  
-        gameOverAnimateHandler(cx)
-    }
-}, 16)
+let startFlappyBirdGame = function () {
+    let gameAnimation = setInterval(() => {
+        animationStates.cyclesHaveDone++;
+        scoreBoard.update(gameState.currentTubes);
+        deleteUnSeenTubes(gameState.currentTubes).then();
+        drawScene(cx)
+        updateMovement();
+        if (bird.touch(gameState.currentTubes) === true || gameState.gameOver) {
+            gameOverAnimateHandler(cx)
+        }
+    }, 16)
+}
 let updateMovement = function () {
     if (animationStates.cyclesHaveDone % speed.cyclesToUpdateButtomField === 0 && !gameState.gameOver)
         animationStates.buttomFieldCutX = animationStates.buttomFieldCutX == 0 ? 5 : 0;
