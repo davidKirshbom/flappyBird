@@ -4,19 +4,15 @@
 
 This project is a simple implementation of the popular game Flappy Bird using Javascript.
 
-## Features
-
-- [List the main features of your game here]
-
 ## Installation
 
 1. Clone the repository: `git clone https://github.com/your-username/flappyBird.git`
-2. [Add any specific installation instructions here]
+2. Install dependencies with npm install
 
 ## Usage
 
-1. [Explain how to run or play the game]
-2. [Provide any additional usage instructions]
+1. run the command npm run start
+2. visit localhost:3000
 
 ## Contributing
 
@@ -30,8 +26,6 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 
 ## License
 
-[Specify the license for your project]
+## License
 
-## Contact
-
-[Provide your contact information or a way for users to reach out to you]
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
